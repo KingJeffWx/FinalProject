@@ -153,7 +153,7 @@ public class DiscoverActivity extends AppCompatActivity {
                 for (int i = 0; i < resultsArray.length(); i++) {
                     JSONObject result = resultsArray.getJSONObject(i);
 
-                    output += result.getString("original_title") + ", ";
+                    output += result.getString("original_title") + "\n";
                 }
                 responseView.setText(output);
             } catch (Exception e) {

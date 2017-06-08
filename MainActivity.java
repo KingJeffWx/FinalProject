@@ -23,5 +23,21 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+        recommend = (Button) findViewById(R.id.button2);
+        recommend.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, RecomActivity.class);
+                startActivity(i);
+            }
+        });
+
+        details = (Button) findViewById(R.id.button3);
+        details.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, DetailsActivity.class);
+                startActivity(i);
+            }
+        });
     }
 }
